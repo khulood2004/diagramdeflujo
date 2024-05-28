@@ -15,17 +15,16 @@ public class HelloApplication {
     public static void main(String[] args) {
 
     Scanner scanner = new Scanner (System.in);
-    System.out.print("Enter a number: ");
-    int number = scanner.nextInt();
-    int acum1 = 0;
-    int acum2=1;
-    int acum3=0;
-    for (int i =1; i<=number; i++){
-        System.out.print("acum1:");
-        acum3=acum1+acum2;
-        acum1=acum2;
-        acum2=acum3;
-        System.out.println(acum1);
+    String array[] = {"z","b","e","f","a","c","o"};
+    int temp =0;
+    for (int i =1; i<=6; i++){
+        for (int j =i+1; i<=7; i++){
+        if (array[1]>array [2]){
+                temp=array[1];
+                array [1]=array [2];
+                array [2]=temp;
+                System.out.println("array[1]");
+            }
 
                         }
 
